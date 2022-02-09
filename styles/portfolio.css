@@ -1,0 +1,12 @@
+body {
+  background: palevioletred;
+}
+h1 {
+  color: rgb(226, 178, 194);
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+p {
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+}
