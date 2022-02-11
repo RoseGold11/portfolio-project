@@ -1,42 +1,106 @@
 :root {
-  --background-color: rgba(194, 237, 208, 0.47);
-  --primary: rgba(78, 136, 98, 0.47);
-  --secondary: rgba(199, 233, 210, 1);
-  --default-font-family: "Poppins", sans-serif;
-  --heading-font-family: "Playfair Display", serif;
+  --primary: #77aa8a;
+  --secondary: rgba(194, 237, 208, 0.47);
+
+  --default-font-family: "Libre Baskerville", serif;
+  --heading-font-family: "Raleway", sans-serif;
+}
+body {
+  font-family: var(--default-font-family);
+  text-align: center;
+  background: var(--secondary);
 }
 h1 {
   font-family: var(--heading-font-family);
-  font-size: 96px;
+  font-size: 86px;
   font-weight: bold;
 }
 h2 {
-  font-family: var(--default-font-family);
-  font-size: 24px;
-  line-height: 2;
+  font-family: var(--heading-font-family);
+  font-size: 55px;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+img {
+  width: 900px;
+  margin: 0 auto;
 }
 .intro {
-  background: var(--background-color);
+  background: white;
   text-align: center;
   padding: 160px 20px;
+}
+.intro h2 {
+  font-family: var(--heading-font-family);
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 2;
 }
 .intro p {
   font-size: 36px;
   font-weight: bold;
+  line-height: 30px;
 }
 
 .btn-branding {
+  padding: 15px 27px;
   background: var(--primary);
+  border: 2px solid var(--primary);
   border-radius: 4px;
   color: white;
-  font-family: var(--default-font-family);
   font-size: 18px;
   line-height: 27px;
-  padding: 15px 27px;
   transition: ease-in-out 200ms;
 }
 .btn-branding:hover {
+  background: white;
   color: var(--primary);
-  background: var(--secondary);
+}
+.btn-branding-outline {
+  padding: 15px 27px;
   border: 2px solid var(--primary);
+  border-radius: 4px;
+  color: var(--primary);
+  font-size: 18px;
+  line-height: 27px;
+  transition: ease-in-out 200ms;
+}
+
+.btn-branding-outline:hover {
+  color: white;
+  background: var(--primary);
+}
+
+.projects {
+  background: white;
+}
+.projects p {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+@media (max-width: 750px) {
+  h1 {
+    font-size: 55px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  .intro {
+    padding: 100px 20px;
+  }
+  .projects {
+    padding: 0;
+  }
+  .projects .btn-branding-outline {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .projects p {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
 }
