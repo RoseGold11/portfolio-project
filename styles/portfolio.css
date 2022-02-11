@@ -24,8 +24,11 @@ p {
   line-height: 1.5;
 }
 img {
-  width: 900px;
+  width: 700px;
+  padding: 5px;
   margin: 0 auto;
+  border: solid 3px var(--secondary);
+  border-radius: 4px;
 }
 .intro {
   background: white;
