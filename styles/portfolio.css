@@ -2,8 +2,8 @@
   --primary: #77aa8a;
   --secondary: rgba(194, 237, 208, 0.47);
 
-  --default-font-family: "Libre Baskerville", serif;
-  --heading-font-family: "Raleway", sans-serif;
+  --default-font-family: "Lora", serif;
+  --heading-font-family: "Kaisei Decol", serif;
 }
 body {
   font-family: var(--default-font-family);
@@ -13,7 +13,6 @@ body {
 h1 {
   font-family: var(--heading-font-family);
   font-size: 86px;
-  font-weight: bold;
 }
 h2 {
   font-family: var(--heading-font-family);
@@ -73,7 +72,7 @@ p {
   background: white;
   border: solid 4px black;
 }
-.projects img {
+.project-images {
   width: 700px;
   padding: 5px;
   margin: 0 auto;
@@ -91,22 +90,39 @@ p {
   background: white;
   border-bottom: solid 4px black;
 }
-.about-content {
+.about-container {
   padding: 20px;
   margin-top: 40px;
 }
-.about-content img {
+.about-container img {
   width: 350px;
 }
-.about-content h2 {
+.about-container h2 {
   font-size: 70px;
   padding: 20px;
 }
-.about-content p {
+.about-container p {
   padding: 20px;
 }
+
+.work-body {
+  background: white;
+}
+.work-container h1 {
+  font-size: 50px;
+  margin-top: 100px;
+}
+.work-container h3 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.work-container p {
+  font-size: 12px;
+}
+
 @media (max-width: 1200px) {
-  .about-content h2 {
+  .about-container h2 {
     font-size: 50px;
   }
 }
@@ -121,7 +137,7 @@ p {
     font-size: 30px;
   }
   .projects,
-  .about-content {
+  .about-container {
     padding: 0;
   }
   .projects .btn-branding-outline,
@@ -133,14 +149,17 @@ p {
     margin-right: 50px;
     margin-left: 50px;
   }
-  .about-content h2 {
+  .about-container h2 {
     font-size: 30px;
     padding-bottom: 0;
   }
   .about-description {
     margin: 0 20px 0 20px;
   }
-  .about-content img {
+  .about-container img {
     width: 200px;
+  }
+  .work-container h1 {
+    font-size: 30px;
   }
 }
