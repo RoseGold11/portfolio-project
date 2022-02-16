@@ -34,6 +34,7 @@ img {
   background: white;
   text-align: center;
   padding: 160px 20px;
+  border-bottom: solid 4px black;
 }
 .intro h2 {
   font-family: var(--heading-font-family);
@@ -78,6 +79,7 @@ img {
 
 .projects {
   background: white;
+  border: solid 4px black;
 }
 .projects p {
   margin-right: 100px;
