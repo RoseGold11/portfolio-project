@@ -17,19 +17,12 @@ h1 {
 }
 h2 {
   font-family: var(--heading-font-family);
-  font-size: 55px;
 }
 p {
   font-size: 16px;
   line-height: 1.5;
 }
-img {
-  width: 700px;
-  padding: 5px;
-  margin: 0 auto;
-  border: solid 3px var(--secondary);
-  border-radius: 4px;
-}
+
 .intro {
   background: white;
   text-align: center;
@@ -71,7 +64,6 @@ img {
   line-height: 27px;
   transition: ease-in-out 200ms;
 }
-
 .btn-branding-outline:hover {
   color: white;
   background: var(--primary);
@@ -81,31 +73,68 @@ img {
   background: white;
   border: solid 4px black;
 }
+.projects img {
+  width: 700px;
+  padding: 5px;
+  margin: 0 auto;
+  border: solid 3px var(--secondary);
+  border-radius: 4px;
+}
 .projects p {
   margin-right: 100px;
   margin-left: 100px;
 }
 
+.about-header {
+  font-size: 60px;
+  padding: 160px 20px;
+  background: white;
+  border-bottom: solid 4px black;
+}
+.about-content {
+  padding: 20px;
+  margin-top: 40px;
+}
+.about-content img {
+  width: 350px;
+}
+.about-content h2 {
+  font-size: 70px;
+  padding: 20px;
+}
+.about-content p {
+  padding: 20px;
+}
+@media (max-width: 1200px) {
+  .about-content h2 {
+    font-size: 50px;
+  }
+}
 @media (max-width: 750px) {
   h1 {
     font-size: 55px;
   }
-  h2 {
-    font-size: 30px;
-  }
-
   .intro {
     padding: 100px 20px;
   }
-  .projects {
+  h2 {
+    font-size: 30px;
+  }
+  .projects,
+  .about-content {
     padding: 0;
   }
-  .projects .btn-branding-outline {
+  .projects .btn-branding-outline,
+  .btn-branding {
     margin-top: 20px;
     margin-bottom: 30px;
   }
   .projects p {
     margin-right: 50px;
     margin-left: 50px;
+  }
+  .about-content h2 {
+    font-size: 30px;
+    padding-bottom: 0;
   }
 }
