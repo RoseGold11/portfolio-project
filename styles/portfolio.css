@@ -137,4 +137,10 @@ p {
     font-size: 30px;
     padding-bottom: 0;
   }
+  .about-description {
+    margin: 0 20px 0 20px;
+  }
+  .about-content img {
+    width: 200px;
+  }
 }
