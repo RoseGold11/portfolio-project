@@ -4,6 +4,7 @@
 
   --default-font-family: "Lora", serif;
   --heading-font-family: "Kaisei Decol", serif;
+  --border: solid 4px black;
 }
 body {
   font-family: var(--default-font-family);
@@ -39,7 +40,8 @@ nav li {
   background: white;
   text-align: center;
   padding: 160px 20px;
-  border-bottom: solid 4px black;
+  border-bottom: var(--border);
+  border-top: var(--border);
 }
 .intro h2 {
   font-family: var(--heading-font-family);
@@ -83,7 +85,7 @@ nav li {
 
 .projects {
   background: white;
-  border: solid 4px black;
+  border: var(--border);
 }
 .project-images {
   width: 700px;
@@ -101,7 +103,7 @@ nav li {
   font-size: 60px;
   padding: 160px 20px;
   background: white;
-  border-bottom: solid 4px black;
+  border-bottom: var(--border);
 }
 .about-container {
   padding: 20px;
