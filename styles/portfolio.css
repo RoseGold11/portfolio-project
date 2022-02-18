@@ -24,6 +24,17 @@ p {
 .green-background {
   background: var(--secondary);
 }
+.logo {
+  max-width: 150px;
+}
+nav ul {
+  padding: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+}
+
 .intro {
   background: white;
   text-align: center;
