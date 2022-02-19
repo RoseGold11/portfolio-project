@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Rachael is a front-end engineer based in the United States."
+    />
+    <title>Front-end developer | Rachael Moten</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -29,25 +33,28 @@
     ></script>
   </head>
   <body class="green-background">
-    <div class="container">
-      <nav>
+    <nav>
+      <a href="index.html" title="Homepage">
         <img
           src="images/logo.png"
           class="logo d-none d-sm-block"
-          alt="black logo"
+          alt="Rachael Moten logo"
         />
-        <ul>
-          <li class="active-link"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+      </a>
+      <ul>
+        <li class="active-link">
+          <a href="index.html" title="Homepage">Home</a>
+        </li>
+        <li><a href="about.html" title="About Rachael">About</a></li>
+        <li><a href="work.html" title="Rachael's work">Work</a></li>
+        <li><a href="contact.html" title="Contact Rachael">Contact</a></li>
+      </ul>
+    </nav>
+
     <div class="intro">
       <p>Hi! I am</p>
       <h1>Rachael Moten</h1>
-      <h2 class="mb-5">Front-end developer based in the USA</h2>
+      <h2>Front-end developer based in the USA</h2>
     </div>
     <p class="text-center m-5">My Featured Projects</p>
     <div class="projects mx-5 mb-5">
@@ -55,7 +62,7 @@
 
       <img
         src="images/film.png"
-        alt="my first official website on the art of filmmaking"
+        alt="Filmmaking project preview"
         class="img-fluid d-none d-md-block mb-3 shadow rounded project-images"
       />
       <p class="text-muted">
@@ -66,12 +73,17 @@
         a fake email signup.
       </p>
 
-      <a href="#" class="btn btn-branding-outline">View webpage</a>
+      <a
+        href="https://hungry-hamilton-837135.netlify.app/"
+        class="btn btn-branding-outline"
+        target="_blank"
+        >View webpage</a
+      >
       <h2 class="pt-5 pb-3">Weather App</h2>
 
       <img
         src="images/weather.png"
-        alt="my weather app"
+        alt="Weather app preview"
         class="img-fluid d-none d-md-block mb-3 shadow rounded project-images"
       />
       <p class="text-muted">
@@ -93,29 +105,46 @@
           class="contact-box d-flex justify-content-between mb-5 pb-5 d-none d-md-flex"
         >
           <div>
-            <h2 class="mt-3">Work Inquiry</h2>
+            <h3 class="mt-3">Work Inquiry</h3>
             <p class="text-muted">Let's work together</p>
           </div>
           <div>
-            <a href="" class="btn btn-branding mt-4"> Contact me </a>
+            <a href="contact.html" class="btn btn-branding mt-4">
+              Contact me
+            </a>
           </div>
         </div>
         <a href="mailto:motenrachael@gmail.com" class="email-link"
           >motenrachael@gmail.com</a
         >
         <div class="social-links d-flex justify-content-center">
-          <a href="https://www.github.com/RoseGold11" target="_blank"
+          <a
+            href="https://www.github.com/RoseGold11"
+            target="_blank"
+            title="Github"
             ><i class="fa-brands fa-github"></i
           ></a>
-          <a href="https://www.instagram.com/motenrachael" target="_blank"
+          <a
+            href="https://www.instagram.com/motenrachael"
+            target="_blank"
+            title="Instagram"
             ><i class="fa-brands fa-instagram"></i
           ></a>
           <a
             href="https://www.facebook.com/people/Rachael-Moten/100077432352149/"
             target="_blank"
-            ><i class="fa-brands fa-facebook-f"></i
+            title="Facebook"
+            ><i class="fa-brands fa-facebook"></i
           ></a>
         </div>
+        <p class="mt-5">
+          Coded by Rachael,
+          <a
+            href="https://github.com/RoseGold11/portfolio-project"
+            class="contact-link"
+            >open-sourced</a
+          >
+        </p>
       </footer>
     </div>
   </body>

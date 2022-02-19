@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Rachael's Work. Rachael is a front-end engineer based in the United States."
+    />
+    <title>Rachael's Work | Rachael Moten</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,15 +27,39 @@
       href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Lora&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/e4506aa4ea.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
+  <body class="green-background">
+    <nav>
+      <a href="index.html" title="Homepage">
+        <img
+          src="images/logo.png"
+          class="logo d-none d-sm-block"
+          alt="Rachael Moten logo"
+        />
+      </a>
+      <ul>
+        <li>
+          <a href="index.html" title="Homepage">Home</a>
+        </li>
+        <li><a href="about.html" title="About Rachael">About</a></li>
+        <li class="active-link">
+          <a href="work.html" title="Rachael's work">Work</a>
+        </li>
+        <li><a href="contact.html" title="Contact Rachael">Contact</a></li>
+      </ul>
+    </nav>
+
     <div class="work-container">
       <h1 class="mb-5">Take a look at what I've worked on so far!</h1>
       <div class="row">
         <div class="col-md-6">
           <img
             src="images/film.png"
-            alt="a picture"
+            alt="Filmmaking project preview"
             class="rounded img-fluid shadow rounded project-images mb-3"
           />
           <h3>Filmmaking Project</h3>
@@ -40,13 +68,61 @@
         <div class="col-md-6">
           <img
             src="images/weather.png"
-            alt="a picture"
+            alt="Weather app preview"
             class="rounded img-fluid shadow rounded project-images mb-3"
           />
           <h3>Weather App</h3>
           <p class="text-muted">Built with HTML and CSS</p>
         </div>
       </div>
+    </div>
+    <div class="container">
+      <footer>
+        <div
+          class="contact-box d-flex justify-content-between mb-5 pb-5 d-none d-md-flex"
+        >
+          <div>
+            <h3 class="mt-3">Work Inquiry</h3>
+            <p class="text-muted">Let's work together</p>
+          </div>
+          <div>
+            <a href="contact.html" class="btn btn-branding mt-4">
+              Contact me
+            </a>
+          </div>
+        </div>
+        <a href="mailto:motenrachael@gmail.com" class="email-link"
+          >motenrachael@gmail.com</a
+        >
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://www.github.com/RoseGold11"
+            target="_blank"
+            title="Github"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/motenrachael"
+            target="_blank"
+            title="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/people/Rachael-Moten/100077432352149/"
+            target="_blank"
+            title="Facebook"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+        </div>
+        <p class="mt-5">
+          Coded by Rachael,
+          <a
+            href="https://github.com/RoseGold11/portfolio-project"
+            class="contact-link"
+            >open-sourced</a
+          >
+        </p>
+      </footer>
     </div>
   </body>
 </html>
